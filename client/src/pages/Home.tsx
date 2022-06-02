@@ -6,7 +6,7 @@ interface HomeProps {
 
 const Home:React.FC<HomeProps> = () => {
   return (
-    <></>
+    <>Error checking</>
   );
 };
 

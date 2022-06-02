@@ -5,11 +5,10 @@ export const getTwenty = async (): Promise<any> => {
     .get("https://api.covidtracking.com/v2/us/daily.json")
     .then(({ data }) => {
       let twenty: object[] = data.data.slice(66, data.data.length + 1);
-      let twenOne: object[] = data.data.slice(0, 66);
+      let twentyOne: object[] = data.data.slice(0, 66);
 
-      const pair = [twenty, twenOne];
+      const pair = [twenty, twentyOne];
 
-      console.log(pair);
       return pair;
     })
     .catch((err) => {

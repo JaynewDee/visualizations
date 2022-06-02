@@ -12,7 +12,8 @@ const OneDay:React.FC<DayCardTypes> = ({date, states, cases}) => {
   return (
     <div style={{color: "white"}}>
         <p>{date}</p>
-        <p>{states}</p>
+        <p>{states} states infected</p>
+        <p></p>
     </div>
   )
 }
