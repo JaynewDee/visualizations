@@ -1,0 +1,56 @@
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title-box {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 0 1rem;
+      border-left: 3px solid white;
+      border-right: 3px solid white;
+      border-radius: 1rem;
+      color: white;
+      width: auto;
+      transition: all .6s;
+      .the,
+      .Current,
+      .subtitle {
+        margin: 0;
+        transition: all 1s;
+      }
+      .the {
+        font-size: 1rem;
+        width: auto;
+        margin: 1rem auto -.55rem;
+      }
+      .Current {
+        margin: auto;
+        padding: 1rem;
+        font-size: 2rem;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-radius: .66rem;
+        width: 66%;
+        height: 66%;
+      }
+      .Current:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 1rem rgb(230, 230, 230));
+      }
+      .subtitle {
+        margin: 1rem .66rem -.33rem;
+        margin-bottom: -.33rem;
+        font-size: .66rem;
+        letter-spacing: -.03rem;
+      }
+      .the:hover,
+    .Current:hover,
+    .subtitle:hover {
+      transform: scale(1.07);
+    }
+
+    }
+    .title-box:hover {
+      transform: scale(1.03)
+    }
+  }

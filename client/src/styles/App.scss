@@ -1,0 +1,43 @@
+@use './Header.scss';
+@use './Navigation.scss';
+@use './Page.scss';
+@use './Covid.scss';
+@font-face {
+  font-family: 'Trispace';
+  src: url('./fonts/Trispace[wdth\,wght].woff2');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Trispace';
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 769px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 426px) {
+  :root {
+    font-size: 11px;
+  }
+}
